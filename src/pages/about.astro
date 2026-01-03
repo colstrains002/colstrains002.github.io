@@ -1,20 +1,32 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
-<Layout
-	title="About Me"
-	description="daisuke osada"
-	pubDate={new Date('September 29 2025')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<p>
-	
-	dai a.k.a. daisuke
+<!doctype html>
+<html lang="ja">
+    <head>
+        <BaseHead title={`About | ${SITE_TITLE}`} description="プロフィール" />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <h1>About</h1>
 
-</p>
+            <p>
+                こるすとれいんす（Colstrains）。<br />
+                音楽、創作、日記のようなメモを書きます。
+            </p>
 
-- [daisuke](https://x.com/daisuke)
-- [dai](https://github.com/dai)
-
-</Layout>
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://note.com/colstrains002">note</a></li>
+                <li><a href="https://newage-zine.booth.pm/">BOOTH</a></li>
+                <li><a href="https://x.com/colstrains002">X</a></li>
+            </ul>
+        </main>
+        <Footer />
+    </body>
+</html>
