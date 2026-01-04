@@ -1,0 +1,30 @@
+media:
+  input: public/media
+  output: /media
+
+content:
+  - name: blog
+    label: Blog
+    type: collection
+    path: src/content/blog
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: pubDate
+        label: PubDate
+        type: date
+        required: true
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+      - name: body
+        label: Body
+        type: rich-text
