@@ -1,6 +1,6 @@
 ---
 title: Pagesログ 3：Pages CMS導入
-description: Pages CMSで投稿導線を整え、Astro（GitHub Pages）でも回る形にする（2026/01/04）
+description: Pages CMSで投稿導線を整え、Astro（GitHub Pages）でも回る形にする
 pubDate: 2026-01-04
 draft: false
 ---
