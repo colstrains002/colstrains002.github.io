@@ -1,6 +1,6 @@
 ---
 title: Pagesログ 1：下書き運用まで
-description: GitHub Pagesでnoteっぽいブログを作り、下書き運用にたどり着く（2026/01/03）
+description: GitHub Pagesでnoteっぽいブログを作り、下書き運用にたどり着く
 pubDate: 2026-01-03
 draft: false
 ---
