@@ -1,6 +1,6 @@
 ---
-title: GitHub Pages（Astro）をテンプレから自分用にする
-description: GitHub Pages（Astro）をテンプレから自分用にする
+title: Pagesログ 3：Pages CMS導入
+description: Pages CMSで投稿導線を整え、Astro（GitHub Pages）でも回る形にする（2026/01/04）
 pubDate: 2026-01-03
 draft: false
 ---
