@@ -1,6 +1,6 @@
 ---
-title: Pages CMSで投稿導線を整える、Astro（GitHub Pages）でも思ったより回りそうだった
-description: Pages CMSで投稿導線を整える、Astro（GitHub Pages）でも思ったより回りそうだった
+title: Pagesログ 2：テンプレ改造
+description: "Description: Astroテンプレを自分用の構成に調整する（2026/01/03）"
 pubDate: 2026-01-04
 draft: false
 ---
@@ -21,7 +21,6 @@ AstroでGitHub Pagesに載せているブログを、できるだけnoteみた�
 
 1.  repo側に .pages.yml を追加  
     ローカルで `.pages.yml` を作ってmainに入れた（作成自体はZedでもgithub.devでも良い）。中身は最小で、mediaの保存先と、blogコレクション（`src/content/blog`）と、frontmatterの項目だけに絞った。
-    
 
 ```yml
 media:
@@ -93,7 +92,6 @@ draft: true
 
 5.  公開切替も確認  
     最後に draft をオフにして保存してみた。すると一覧にもRSSにも出るようになった。操作としては「下書き→公開」の切り替えで完結するので、体感としてはかなりnoteに近い。
-    
 
 ここまでで、ブラウザ完結の投稿導線はだいぶ固まったと思う。普段はPages CMSで記事を書いて保存、公開するときだけdraftを切り替える。裏側はコミットだが、日々の操作としては「投稿画面」が中心になる。
 
