@@ -1,5 +1,6 @@
 ---
 title: GitHub Pages（Astro）をテンプレから自分用にする
+description: GitHub Pages（Astro）をテンプレから自分用にする
 pubDate: 2026-01-03
 draft: false
 ---
@@ -19,7 +20,7 @@ GitHub Pages（Astro）のブログを、テンプレ状態のまま放置して
 
 その後、テンプレの残骸でいちばん目につく「右上のSNSアイコン3つ」と、フッターの「© 2026 Your name here. All rights reserved.」を直した。リンクが Astro公式（Mastodon/Twitter/GitHub）になっていたので、自分のものに差し替える。最初は Pixiv / X / note にしようとしたが、Pixivの公式SVGが白と青しかなくて、白背景に白アイコンは当然見えないし、青にすると他と色がずれる。悩んだ末、Pixiv枠はInstagramに切り替えることにした。リンクを揃えるのが第一で、見た目の完璧さは後で詰めればいい。
 
-この時点で、テンプレのどこかにSNSアイコン素材がまとまって入っているのでは、と疑った。viewBox="0 0 16 16" があるし、astro-icon="social/..." みたいな属性も残っていたから。でも find しても public/favicon.svg しか出ないし、astro-icon の参照も Footer.astro に残っているだけだった。つまり、素材が同梱されているのではなく、Header/Footer にインラインで埋め込まれているだけ。これで方針が決まって、public/social にSVGを置いて <img> で参照する形に統一した。こうしておけば、HeaderとFooterの両方で同じアイコンを使えるし、差し替えも一か所で済む。
+この時点で、テンプレのどこかにSNSアイコン素材がまとまって入っているのでは、と疑った。viewBox="0 0 16 16" があるし、astro-icon="social/..." みたいな属性も残っていたから。でも find しても public/favicon.svg しか出ないし、astro-icon の参照も Footer.astro に残っているだけだった。つまり、素材が同梱されているのではなく、Header/Footer にインラインで埋め込まれているだけ。これで方針が決まって、public/social にSVGを置いて  で参照する形に統一した。こうしておけば、HeaderとFooterの両方で同じアイコンを使えるし、差し替えも一か所で済む。
 
 結果として、ヘッダーとフッターのSNSは Instagram / X / note に統一できた。リンクも表示も確認できたので、最低限の「テンプレ状態から脱出」は達成。やっとスタート地点に立った感じがする。
 
