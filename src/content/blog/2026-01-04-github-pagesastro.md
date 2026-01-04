@@ -1,6 +1,6 @@
 ---
 title: Pagesログ 2：テンプレ改造
-description: Astroテンプレを自分用の構成に調整する（2026/01/03）
+description: Astroテンプレを自分用の構成に調整する
 pubDate: 2026-01-03
 draft: false
 ---
